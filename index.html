@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,7 +14,7 @@
 
     <link rel="stylesheet" 
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
+    
 </head>
 <body>
 
@@ -44,8 +43,8 @@
 
          <div class="nav-right">
             
-            <a href="#" class="btn">Buy Now</a>
-            <i class="fa-solid fa-bars" onclick="openMenu()" id="menuIcon"></i>
+            <a href="https://wa.me/918129981952" class="btn" target="_blank">Buy Now</a>
+            <i class="fa-solid fa-bars" onclick="openMenu()" id="hamburger"></i>
         </div>
          </nav>
     </header>
@@ -59,7 +58,7 @@
                     tells a story of love and sweetness. we
                     specialize in crafting cakes that make
                     your celebrations extra special.</p>
-                <a href="#" class="order-now">Order Now</a>
+                <a href="https://wa.me/918129981952" class="btn" target="_blank">Order Now</a>
             </div>
             <div class="hero-image">
                 <img src="hero-image.jpg" class="hero-img" alt="Cake">
@@ -161,7 +160,7 @@
                                 <div class="contact-details">
                                     <div class="contact-item">
                                         <i class="fa-solid fa-location-dot"></i>
-                                        <p>Joy villas,Mundamveli,Kochi-07</p>
+                                        <p>Joy villas,Mundamveli,Kochi-507</p>
                                     </div>
                                     <div class="contact-item">
                                         <i class="fa-solid fa-envelope"></i>
@@ -178,8 +177,8 @@
                                     <div class="contact-item">
                                         <i class="fa-solid fa-globe"></i>
                                         <p>
-                                            <a href="https://www.marvelouscakes.com" target="_blank">
-                                                www.marvelouscake com
+                                            <a href="https://www.marvelouscakesbysubina.com" target="_blank">
+                                                www.marvelouscakesbysubina.com
                                     
                                     
                                             </a>
@@ -187,13 +186,23 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="get-touch" onclick="toggleContact()">
+                                <span class="text">GET IN TOUCH</span>
+                                  <i id="icon" class="fa fa-plus"></i>
+                            </div>
+                            <div id="mobilePolicies"
+                            class= "mobile-only" style="display: none;"> 
+                                    <a href="term.html">Term & Conditions</a>
+                                    <a href="delivery.html">Delivery Policy</a>
+                                    <a href="disclaimer.html">Disclaimer</a>
+                            </div>
                             <!-- -----RIGHT SIDE---- -->
                             <div class="contact-form-right">
                                 <div class="contact-form">
-                                    <form>
-                                        <input type="text" name="full name" placeholder="Your full name" required>
-                                        <input type="email" nane="email" placeholder="Your Email" required>
-                                        <textarea name="Message" placeholder="Your Message" required></textarea>
+                                    <form id="contactform">
+                                        <input type="text" id="name" placeholder="Your full name" required>
+                                        <input type="email" id="email" placeholder="Your Email" required>
+                                        <textarea id="message" placeholder="Your Message" required></textarea>
                                         <button type="submit" class="submit">send Message</button>
                                     </form>
 
@@ -204,7 +213,7 @@
                     <section class="footer">
                         <div class="section-content">
                             <div class="copyright">
-                                <p>&copy;2026 marvelouscake. All rights reserved.</p>
+                                <p>&copy;2026 Mandaramsusmi. All rights reserved.</p>
 
                                 <a href="https://wa.me/918129981952?text=I%20want%20to%20place%20an%20order"
                                     target="_blank" class="whatsapp-link">
@@ -213,12 +222,14 @@
                                 </a>
 
                             </div>
-                            <div class="footer-links">
+                          <div class="footer-links mobile-only" id="mobilePolicies">
+                            </div>
                                 <u1 class="nav-links" id="navLinks">
                                     <li><a href="#">Privacy Policy</a></li>
                                     <li><a href="#">Term & Conditions</a></li>
                                     <li><a href="#">Delivery Policy</a></li>
-                                    <li><a href="#">Desclaimer</a></li>
+                                    <li><a href="#">Disclaimer</a></li>
+                                </div>   
                                 </u1>
                             </div>
                             <script src="script.js"></script>
